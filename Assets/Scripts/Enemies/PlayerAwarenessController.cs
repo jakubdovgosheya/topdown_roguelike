@@ -6,6 +6,7 @@ public class PlayerAwarenessController : MonoBehaviour
     public Vector2 DirectionToPlayer { get; private set; }
 
     [SerializeField] private float _playerAwarenessDistance;
+    [SerializeField] private float _playerMinDistance;
 
     private Transform _player;
 
@@ -20,9 +21,11 @@ public class PlayerAwarenessController : MonoBehaviour
         Vector2 enemyToPlayerVector = _player.position - transform.position;
         DirectionToPlayer = enemyToPlayerVector.normalized;
 
-        if (enemyToPlayerVector.magnitude <= _playerAwarenessDistance)
+        if (enemyToPlayerVector.magnitude <= _playerAwarenessDistance && enemyToPlayerVector.magnitude >= _playerMinDistance)
         {
             AwareOfPlayer = true;
+
+           
         }
         else
         {
