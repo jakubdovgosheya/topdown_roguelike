@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 2775639215774683181}
   - component: {fileID: 7701281383578524294}
   - component: {fileID: 8170792077199650723}
+  - component: {fileID: 5223675267207753900}
   - component: {fileID: 6006316433454422787}
   m_Layer: 7
   m_Name: Enemy
@@ -182,6 +183,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAwarenessController
   _playerAwarenessDistance: 8
   _playerMinDistance: 1.2
+--- !u!114 &5223675267207753900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2235708623875253858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af5a8d37f1d5c4b458cbb1f230bd3158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
+  damage: 2
+  attackCooldown: 2
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!58 &6006316433454422787
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -246,7 +264,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 182406563389197825}
