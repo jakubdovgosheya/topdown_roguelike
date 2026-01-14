@@ -210,6 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   startingHealth: 10
+  deathMenu: DeathMenu
 --- !u!58 &5788169636140649121
 CircleCollider2D:
   m_ObjectHideFlags: 0

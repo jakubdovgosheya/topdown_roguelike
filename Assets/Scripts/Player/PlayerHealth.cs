@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private int startingHealth = 10;
     private int health;
+    public string deathMenu;
 
     private void Awake()
     {
@@ -31,5 +33,6 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("Player died");
+        SceneManager.LoadScene(deathMenu);
     }
 }
