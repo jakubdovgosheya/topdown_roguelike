@@ -4,6 +4,8 @@ public class PlayerCount : MonoBehaviour
 {
     private int enemiesLive = 0;
 
+    StageLoader stageLoader;
+
     public void CountEnemiesUp()
     {
         enemiesLive++;
@@ -23,5 +25,7 @@ public class PlayerCount : MonoBehaviour
     private void StageWon()
     {
         Debug.Log("You won the stage!");
+        stageLoader = GetComponent<StageLoader>();
+        stageLoader.LoadNextStage();
     }    
 }

@@ -14,6 +14,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeathMenu.unity
     guid: c88917c06bbf5ea49b39977605303644
+  - enabled: 1
+    path: Assets/Scenes/SecondStages/Test_2A.unity
+    guid: d845b466648249e4d93837c196b85e03
+  - enabled: 1
+    path: Assets/Scenes/SecondStages/Test_2B.unity
+    guid: 193efdba56f801147b69aa4235641fe7
+  - enabled: 1
+    path: Assets/Scenes/ThirdStages/Test_3A.unity
+    guid: 72c395c9ab7e4924c97c4121cd524949
+  - enabled: 1
+    path: Assets/Scenes/ThirdStages/Test_3B.unity
+    guid: 0c903314b3159524f90e4ab630d917c7
+  - enabled: 1
+    path: Assets/Scenes/FourthStages/Test_4A.unity
+    guid: 3ca37825304252748aa2e275f4b6fa72
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
