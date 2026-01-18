@@ -4,11 +4,15 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private int startingHealth = 10;
     private int health;
+    PlayerCount playerCount;
 
 
     private void Awake()
     {
+        playerCount = FindFirstObjectByType<PlayerCount>();
+        playerCount.CountEnemiesUp();
         health = startingHealth;
+
     }
 
 
@@ -32,6 +36,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void Die()
     {
+        playerCount.CountEnemiesDown();
         Destroy(gameObject);
     }
 }
