@@ -10,9 +10,19 @@ public class PlayerMovement : MonoBehaviour
 
     public float playerSpeed = 5;
 
+    SetStats statSetter;
+
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+        statSetter = FindFirstObjectByType<SetStats>();
+        statSetter.SetPlayerSpeed();
+    }
+
+    public void SetSpeed(float speed)
+    {
+        playerSpeed = speed;
+        Debug.Log("Speed set to " + playerSpeed);
     }
 
     private void FixedUpdate()
