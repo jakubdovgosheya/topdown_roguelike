@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: 5788169636140649121}
   - component: {fileID: 1762538677991853089}
   - component: {fileID: 5814308685538699109}
+  - component: {fileID: 8971194336859302348}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -398,3 +399,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShoot
   bulletPrefab: {fileID: 1673478639784225121, guid: 1e4ec81a173755f4b8a8bfc19e2205b5, type: 3}
   firePoint: {fileID: 79712349640820028}
+--- !u!114 &8971194336859302348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8134687086136503044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af0e72165db78cd46afd4d5db72adbf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteractor

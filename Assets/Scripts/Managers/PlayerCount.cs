@@ -25,7 +25,14 @@ public class PlayerCount : MonoBehaviour
     private void StageWon()
     {
         Debug.Log("You won the stage!");
-        stageLoader = GetComponent<StageLoader>();
-        stageLoader.LoadNextStage();
+        UpgradeSpawner[] spawners = FindObjectsByType<UpgradeSpawner>(FindObjectsSortMode.None);
+
+        foreach (var spawner in spawners)
+        {
+            spawner.SpawnUpgrade();
+        }
+
+        //stageLoader = GetComponent<StageLoader>();
+        //stageLoader.LoadNextStage();
     }    
 }

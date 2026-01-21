@@ -22,4 +22,15 @@ public class SetStats : MonoBehaviour
         playerMovement = FindFirstObjectByType<PlayerMovement>();
         playerMovement.SetSpeed(playerSpeed);
     }
+
+    public void IncreaseMaxHealth(int maxHealthIncrease)
+    {
+        maxPlayerHealth = maxPlayerHealth + maxHealthIncrease;
+    }
+
+
+    public void IncreaseSpeed(int speedIncrease)
+    {
+        playerSpeed = playerSpeed + speedIncrease;
+    }
 }
