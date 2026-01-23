@@ -7,12 +7,15 @@ public class PlayerHealth : MonoBehaviour
     private int health;
     public string deathMenu;
     SetStats statSetter;
+    HUDManager hudManager;
 
     private void Awake()
     {
         statSetter = FindFirstObjectByType<SetStats>();
         statSetter.SetPlayerMaxHealth();
         health = startingHealth;
+        hudManager = FindAnyObjectByType<HUDManager>();
+        hudManager.UpdateHP(health, startingHealth);
     }
 
     public void SetMaxHealth(int maxHealth)
@@ -37,6 +40,10 @@ public class PlayerHealth : MonoBehaviour
                 Die();
             }
         }
+
+
+        hudManager = FindAnyObjectByType<HUDManager>();
+        hudManager.UpdateHP(health, startingHealth);
     }
 
     private void Die()

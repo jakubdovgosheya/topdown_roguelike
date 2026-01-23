@@ -5,6 +5,7 @@ public class SetStats : MonoBehaviour
 
     PlayerHealth playerHealth;
     PlayerMovement playerMovement;
+    HUDManager hudManager;
 
     [SerializeField] public int maxPlayerHealth = 10;
     [SerializeField] public float playerSpeed = 8;
@@ -14,6 +15,7 @@ public class SetStats : MonoBehaviour
         Debug.Log("Setting player Health!");
         playerHealth = FindFirstObjectByType<PlayerHealth>();
         playerHealth.SetMaxHealth(maxPlayerHealth);
+
     }
 
     public void SetPlayerSpeed()
@@ -21,6 +23,8 @@ public class SetStats : MonoBehaviour
         Debug.Log("Setting player Speed!");
         playerMovement = FindFirstObjectByType<PlayerMovement>();
         playerMovement.SetSpeed(playerSpeed);
+        hudManager = FindAnyObjectByType<HUDManager>();
+        hudManager.UpdateSpeed(playerSpeed);
     }
 
     public void IncreaseMaxHealth(int maxHealthIncrease)
