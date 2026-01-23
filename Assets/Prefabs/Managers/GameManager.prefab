@@ -59,8 +59,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d4a6e93f4373e64f859a75f91bd3905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetStats
-  maxPlayerHealth: 100
-  playerSpeed: 10
+  maxPlayerHealth: 20
+  playerSpeed: 5
 --- !u!114 &3336348203432382936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +81,7 @@ MonoBehaviour:
   - Test_3B
   FourthStages:
   - Test_4A
+  nextStage: 1
 --- !u!114 &6019661650763960971
 MonoBehaviour:
   m_ObjectHideFlags: 0

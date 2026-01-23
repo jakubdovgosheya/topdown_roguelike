@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2543980108080863395}
-  - component: {fileID: 7393672467234921260}
+  - component: {fileID: 7011422343892926731}
   - component: {fileID: 5783183056334106674}
   - component: {fileID: 7328639479425384358}
   m_Layer: 0
-  m_Name: SpeedUpgrade
+  m_Name: MaxHPUpgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,7 +36,7 @@ Transform:
   - {fileID: 504283153238189002}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7393672467234921260
+--- !u!114 &7011422343892926731
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,10 +45,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3335263633614473199}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d762fbfaecbcaf54e90445b17f973214, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d42a2124d3e600489108ca580e2e8eb, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpeedUpgrade
-  speedIncreaseValue: 1
+  m_EditorClassIdentifier: Assembly-CSharp::MaxHPUpgrade
+  maxHealthIncreaseValue: 4
 --- !u!114 &5783183056334106674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,9 +64,9 @@ MonoBehaviour:
   upgradeEffect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7393672467234921260}
-        m_TargetAssemblyTypeName: SpeedUpgrade, Assembly-CSharp
-        m_MethodName: IncreaseSpeed
+      - m_Target: {fileID: 7011422343892926731}
+        m_TargetAssemblyTypeName: MaxHPUpgrade, Assembly-CSharp
+        m_MethodName: IncreaseMaxHP
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Speed +1
+  m_text: Max HP +4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -371,7 +371,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -5177388603050735206, guid: cc35afd292fc349128b36a291fb3a165, type: 3}
-  m_Color: {r: 0.3459563, g: 0.81886786, b: 0.2889213, a: 1}
+  m_Color: {r: 0.81960785, g: 0.29019606, b: 0.32049304, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
